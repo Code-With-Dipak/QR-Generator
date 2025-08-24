@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+    <body>
+        <!-- Animated Background Elements -->
+        <div class="animated-bg">
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+        </div>
+
+        <!-- Animated Decorative Toys -->
+        <div class="animated-toy toy-1">🎮</div>
+        <div class="animated-toy toy-2">🤖</div>
+        <div class="animated-toy toy-3">🎯</div>
+        <div class="animated-toy toy-4">🎨</div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-qrcode"></i>
+                <span>QR Generator</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Generate QR Codes Instantly</h1>
+                    <p>Convert any URL or website link into a QR code with just one click</p>
+                    
+            
+                        <div class="input-group">
+                            <input 
+                                type="url" 
+                                id="urlInput" 
+                                placeholder="Enter URL or website link..."
+                                class="url-input"
+                            >
+                            <button id="generateBtn" class="generate-btn">
+                                <i class="fas fa-qrcode"></i>
+                                Generate QR
+                            </button>
+                        </div>
+                        
+                        <div class="qr-result">
+                            <div id="qrCode" class="qr-code-container">
+                                <div class="placeholder">
+                                    <i class="fas fa-qrcode"></i>
+                                    <p>Your QR code will appear here</p>
+                                </div>
+                            </div>
+                            <button id="downloadBtn" class="download-btn" disabled>
+                                <i class="fas fa-download"></i>
+                                Download QR Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About me</h2>
+                <p class="about-description">Meet the talented developers behind this QR generator</p>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="image/codewithdipak.jpg" alt="Dipak Sarvade">
+                        </div>
+                        <h3>Dipak Sarvade</h3>
+                        <h4>Web Developer</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/dipak-sarvade-75b736275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/DipakSarvade"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/dipaksarvade/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 QR Generator. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
