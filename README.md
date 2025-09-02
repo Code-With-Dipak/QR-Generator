@@ -50,12 +50,10 @@ QR-Generator/
 
 ## Team Members
 
-The about us page features 4 team members:
+The about us page:
 
-1. **John Doe** - Frontend Developer
-2. **Jane Smith** - UI/UX Designer  
-3. **Mike Johnson** - Backend Developer
-4. **Sarah Wilson** - Full Stack Developer
+1. **Dipak Sarvade**
+
 
 ## Customization
 
